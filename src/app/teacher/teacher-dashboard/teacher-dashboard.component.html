@@ -1,0 +1,18 @@
+
+    <div id="wrapper">
+
+      
+
+        
+        <div class="collapse navbar-collapse navbar-ex1-collapse" >
+          <ul class="nav navbar-nav side-nav" style="position: fixed;">
+            <li><a><i class="fa fa-area-chart"></i> Dashboard</a></li>
+            <li><a [routerLink]=" ['addcourses'] "><i class="fa fa-industry"></i>AddCourses </a></li>            
+            <li><a [routerLink]=" ['addchapters']"><i class="fa fa-cogs"></i> AddChapters</a></li>
+            <li><a [routerLink]=" ['addtopics']"><i class="fa fa-shopping-bag"></i> AddTopics</a></li>
+            <li><a  [routerLink]=" ['Quizes'] "><i class="fa fa-credit-card"></i> AddQuiz</a></li>
+          </ul>
+        </div>
+
+    <router-outlet></router-outlet>
+  </div>

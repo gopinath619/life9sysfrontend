@@ -1,0 +1,20 @@
+
+    <div id="wrapper">
+
+      
+
+        
+        <div class="collapse navbar-collapse navbar-ex1-collapse" >
+          <ul class="nav navbar-nav side-nav" style="position: fixed;">
+            <li><a [routerLink]=" ['/home/branch'] "><i class="fa fa-sitemap"></i> Branches</a></li>
+            <li><a><i class="fa fa-area-chart"></i> Dashboard</a></li>
+            <li><a [routerLink]=" ['/home/inventory'] "><i class="fa fa-industry"></i> Inventory</a></li>            
+            <li><a [routerLink]=" ['/home/services'] "><i class="fa fa-cogs"></i> Services</a></li>
+            <li><a><i class="fa fa-shopping-bag"></i> Purchase</a></li>
+            <li><a><i class="fa fa-credit-card"></i> Sales</a></li>
+            <li><a [routerLink]=" ['/home/user'] "><i class="fa fa-cog"></i> Settings</a></li>
+          </ul>
+        </div>
+
+    <router-outlet></router-outlet>
+  </div>

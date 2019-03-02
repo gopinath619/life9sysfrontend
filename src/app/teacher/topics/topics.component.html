@@ -1,0 +1,19 @@
+<div class="col-md-6">
+<form #CourseForm="ngForm" name="form" (ngSubmit)="CourseForm.form.valid && onSubmit(user)"  novalidate>
+  
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Select chapters</label>
+    <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="user.chapter" [ngModelOptions]="{standalone: true}" placeholder="Select Course">
+      <option *ngFor="let obj of chapterlist" [value]="obj.id">{{obj.chaptername}}</option>
+      
+    </select>
+
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Enter Topics</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="user.topic" [ngModelOptions]="{standalone: true}" placeholder="New Chapter">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit </button>
+
+</form>
+</div>

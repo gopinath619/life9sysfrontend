@@ -1,0 +1,42 @@
+<div class="container1">
+  <button class="add_form_field">Add Course &nbsp; <span style="font-size:16px; font-weight:bold;"></span></button>
+  <div><input type="text" name="mycourse"  [(ngModel)]="mycourse" ></div>
+  <button class="btn btn-primary" (click)="submitcourse(mycourse)" type="submit">Submit</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- $(document).ready(function() {
+    var max_fields      = 10;
+    var wrapper         = $(".container1");
+    var add_button      = $(".add_form_field");
+  
+    var x = 1;
+    $(add_button).click(function(e){
+        e.preventDefault();
+        if(x < max_fields){
+            x++;
+            $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="delete">Delete</a></div>'); //add input box
+        }
+  else
+  {
+  alert('You Reached the limits')
+  }
+    });
+  
+    $(wrapper).on("click",".delete", function(e){
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+}); -->
